@@ -1,0 +1,42 @@
+
+flowchart TD
+    A[Inicio] --> B[Realizar copia de seguridad de los datos importantes]
+    B --> C{¿Datos importantes respaldados?}
+    C -->|Sí| D[Preparar medio de instalación de Windows 10]
+    C -->|No| B
+    D --> E{¿Se tiene un medio de instalación (USB/DVD) de Windows 10?}
+    E -->|Sí| F[Insertar medio de instalación en el PC]
+    E -->|No| G[Descargar y crear un medio de instalación]
+    G --> F
+    F --> H[Reiniciar el PC]
+    H --> I[Acceder a la BIOS/UEFI]
+    I --> J[Configurar orden de arranque]
+    J --> K[Guardar cambios y reiniciar]
+    K --> L[Iniciar desde el medio de instalación]
+    L --> M[Seleccionar idioma, formato de hora y teclado]
+    M --> N[Hacer clic en "Siguiente"]
+    N --> O[Hacer clic en "Instalar ahora"]
+    O --> P[Ingresar la clave de producto de Windows 10]
+    P --> Q{¿Clave de producto disponible?}
+    Q -->|Sí| R[Ingresar clave y continuar]
+    Q -->|No| S[Seleccionar "No tengo una clave de producto"]
+    R --> T[Aceptar los términos de licencia]
+    S --> T
+    T --> U[Seleccionar el tipo de instalación]
+    U --> V[Seleccionar la partición donde instalar Windows]
+    V --> W{¿Formatear partición?}
+    W -->|Sí| X[Formatear la partición seleccionada]
+    W -->|No| Y[Continuar sin formatear]
+    X --> Z[Comenzar la instalación de Windows]
+    Y --> Z
+    Z --> AA[Configurar Windows 10 después de la instalación]
+    AA --> AB[Seleccionar región]
+    AB --> AC[Seleccionar diseño del teclado]
+    AC --> AD[Conectar a una red]
+    AD --> AE[Configurar opciones de privacidad]
+    AE --> AF[Crear una cuenta de usuario]
+    AF --> AG[Finalizar configuración]
+    AG --> AH{¿Windows instalado correctamente?}
+    AH -->|Sí| AI[Fin del proceso]
+    AH -->|No| AJ[Revisar problemas y posibles soluciones]
+    AJ --> AG
